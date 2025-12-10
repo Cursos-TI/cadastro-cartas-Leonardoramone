@@ -11,5 +11,7 @@ int main() {
 
   // Área para exibição dos dados da cidade
 
+  printf("Cartas Super trunfo\n");
+
 return 0;
 } 
