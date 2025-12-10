@@ -9,8 +9,10 @@ int main() {
   char Estado;
   char codigoEstado [100];
   char Cidade [100];
-  int populacao, pontosTuristicos;
-  float area, pib;
+  int populacao;
+  float area;
+  float pib;
+  int pontosTuristicos;
 
   // Área para entrada de dados
 
