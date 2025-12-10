@@ -6,6 +6,11 @@
 
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
+  char Estado;
+  char codigoEstado [100];
+  char Cidade [100];
+  int populacao, pontosTuristicos;
+  float area, pib;
 
   // Área para entrada de dados
 
