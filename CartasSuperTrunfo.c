@@ -14,6 +14,9 @@ int main() {
     float area1;
     float pib1;
     int pontosTuristicos1;
+    float DensidadePopulacional1;
+    float PibPerCapta1;
+    
 
     //Carta 2:
     char estado2;
@@ -23,8 +26,11 @@ int main() {
     float area2;
     float pib2;
     int pontosTuristicos2;
+    float DensidadePopulacional2;
+    float PibPerCapta2;
 
-  // Área para entrada de dados
+  
+    // Área para entrada de dados
    //Ler os dados para a variavel 1:
     printf("Digite a letra do Estado 1 - De A a H: \n");
     scanf(" %c", &estado1);
@@ -46,6 +52,12 @@ int main() {
 
     printf("Digite Qtde dos Pontos Turísticos 1: \n");
     scanf("%d", &pontosTuristicos1);
+
+    DensidadePopulacional1 = (float) populacao1 / area1;
+   
+
+    PibPerCapta1 = (float) pib1/populacao1;
+  
 
 
     //Ler os dados para a variável 2
@@ -70,9 +82,18 @@ int main() {
     printf("Digite Qtde dos Pontos Turísticos 2: \n");
     scanf("%d", &pontosTuristicos2);
 
+    DensidadePopulacional2 = (float) populacao2 / area2;
+   
+
+    PibPerCapta2 = (float) pib2/populacao2;
+   
+
   // Área para exibição dos dados da cidade
-  printf("\n Carta 1: \n Letra do Estado: %c\n Código da carta: %s\n Nome da cidade: %s\n População: %d\n Área: %f\n PIB: %f\n Pontos Turísticos: %d\n", estado1, codigo1, cidade1, populacao1, area1, pib1, pontosTuristicos1);
-    printf("\n Carta 2: \n Letra do Estado: %c\n Código da carta: %s\n Nome da cidade: %s\n População: %d\n Área: %f\n PIB: %f\n Pontos Turísticos: %d\n\n\n", estado2, codigo2, cidade2, populacao2, area2, pib2, pontosTuristicos2);
+  printf("\n Carta 1: \n Letra do Estado: %c\n Código da carta: %s\n Nome da cidade: %s\n População: %d\n Área: %.2f\n PIB: %.2f\n Pontos Turísticos: %d\n Densidade Populacional: %.2f\n Pib per Capta: %f\n", estado1, codigo1, cidade1, populacao1, area1, pib1, pontosTuristicos1, DensidadePopulacional1, PibPerCapta1);
+  printf("\n Carta 2: \n Letra do Estado: %c\n Código da carta: %s\n Nome da cidade: %s\n População: %d\n Área: %.2f\n PIB: %.2f\n Pontos Turísticos: %d\n Densidade Populacional: %.2f\n Pib per Capta: %f\n\n", estado2, codigo2, cidade2, populacao2, area2, pib2, pontosTuristicos2, DensidadePopulacional2, PibPerCapta2);
+
+  // Área para o nível Avançado (Aventureiro).
+  // Calculando Densidade Populacional e PIB per Capita
 
   
 return 0;
